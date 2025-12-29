@@ -19,10 +19,7 @@ class BatchHiveModel extends HiveObject {
     status = status ?? 'active';
 
   BatchEntity toEntity(){
-    return BatchEntity(
-      batchId: batchId,
-      batchName: batchName, 
-      status: status);
+    return BatchEntity(batchId: batchId, batchName: batchName, status: status);
   }
 
   factory BatchHiveModel.fromEntity(BatchEntity entity){
