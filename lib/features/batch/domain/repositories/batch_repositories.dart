@@ -3,7 +3,7 @@ import 'package:lost_n_found/core/error/failures.dart';
 import 'package:lost_n_found/features/batch/domain/entities/batch_entity.dart';
 
 
-abstract class BatchRepository {
+abstract interface class IBatchRepository {
   Future<Either<Failure,List<BatchEntity>>> getAllBAatches();
   Future<Either<Failure, BatchEntity>> frtBatchById(String BatchId);
   Future<Either<Failure, bool>> createBatch(BatchEntity entity);
