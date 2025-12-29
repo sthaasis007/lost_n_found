@@ -34,7 +34,7 @@ class HiveService {
     return model;
   }
 
-  List<BatchHiveModel> getAllBAatches(){
+  List<BatchHiveModel> getAllBatches(){
     return _batchBox.values.toList();
   }
 

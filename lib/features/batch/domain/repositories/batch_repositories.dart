@@ -4,8 +4,8 @@ import 'package:lost_n_found/features/batch/domain/entities/batch_entity.dart';
 
 
 abstract interface class IBatchRepository {
-  Future<Either<Failure,List<BatchEntity>>> getAllBAatches();
-  Future<Either<Failure, BatchEntity>> frtBatchById(String BatchId);
+  Future<Either<Failure,List<BatchEntity>>> getAllBatches();
+  Future<Either<Failure, BatchEntity>> getBatchById(String batchId);
   Future<Either<Failure, bool>> createBatch(BatchEntity entity);
   Future<Either<Failure, bool>> updateBatch(BatchEntity entity);
   Future<Either<Failure, bool>> deleteBatch(String batchrd);
