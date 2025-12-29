@@ -29,7 +29,8 @@ class BatchLocalDatasource implements IbatchDatasource{
   @override
   Future<List<BatchEntity>> getAllBatches() async{
     try{
-      return _hiveService.getAllBatches();
+      final models = _hiveService.getAllBatches();
+      return BatchHiveModel.toEntityList(models);
     } catch (e) 
     {
       return [];
